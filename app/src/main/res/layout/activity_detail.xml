@@ -11,57 +11,112 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:id="@+id/nama"
+        android:text="(Nama)"
         android:layout_marginTop="24dp"
-        android:textSize="34dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/luas"
-        android:text="Luas"
-        android:layout_below="@+id/nama"
-        android:textSize="24dp"
-        />
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/Panjang"
-        android:layout_below="@+id/nama"
-        android:id="@+id/editLuas"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Panjang"
-        android:id="@+id/Panjang"
-        android:textSize="24dp"
-        android:layout_below="@+id/editLuas"
-        />
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
 
-    <EditText
-        android:layout_width="200dp"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editLuas"
-        android:layout_toRightOf="@+id/Panjang"
-        android:id="@+id/editPanjang"/>
+        android:layout_below="@+id/nama"
+        android:layout_margin="6dp"
+        android:id="@+id/cardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/cardView"
+            android:layout_alignTop="@+id/cardView"
+            android:layout_marginTop="26dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/param1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="param1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/editParam1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/param2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editParam2"
+                android:layout_alignBottom="@+id/editParam2"
+                android:layout_alignParentStart="true"
+                android:text="param2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/editParam2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editParam1"
+                android:layout_toRightOf="@+id/param2"
+                android:layout_marginLeft="19dp"/>
+
+            <TextView
+                android:id="@+id/param3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editParam2"
+                android:text="param3"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/editParam3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editParam2"
+                android:layout_toRightOf="@+id/param2"
+                android:layout_marginLeft="19dp"/>
+
+            <TextView
+                android:id="@+id/param4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editParam3"
+                android:text="param4"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/editParam4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editParam3"
+                android:layout_toRightOf="@+id/param2"
+                android:layout_marginLeft="19dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
     <Button
+        android:id="@+id/hitungLuas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Panjang"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:text="Luas"
-        android:id="@+id/btLuas"
-        />
+        android:layout_below="@+id/cardView"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_toStartOf="@+id/nama"
+        android:text="Luas" />
 
     <Button
+        android:id="@+id/hitungKeliling"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Panjang"
-        android:layout_marginTop="50dp"
-        android:layout_toRightOf="@+id/btLuas"
-        android:layout_marginLeft="50dp"
-        android:text="keliling"
-        android:id="@+id/btKelilig"
-        />
+        android:layout_alignBaseline="@+id/hitungLuas"
+        android:layout_alignBottom="@+id/hitungLuas"
+        android:layout_toEndOf="@+id/nama"
+        android:text="Keliling" />
+
 </RelativeLayout>

@@ -12,7 +12,7 @@
         android:text="Hasil Luas / Keliling"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:textSize="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:id="@+id/kata"
         />
 
@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/kata"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="(Nama)"
         android:id="@+id/nama"
         />
     <TextView
@@ -30,7 +31,8 @@
         android:layout_below="@+id/nama"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:textSize="60dp"
+        android:text="Hasil"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/hasil"
         >
     </TextView>

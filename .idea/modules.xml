@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UtsMobile2.iml" filepath="$PROJECT_DIR$/UtsMobile2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UtsMobile.iml" filepath="$PROJECT_DIR$/.idea/UtsMobile.iml" />
+      <module fileurl="file://D:\Project\Android_Studio_Project\UtsMobile\UtsMobile2.iml" filepath="D:\Project\Android_Studio_Project\UtsMobile\UtsMobile2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Project\Android_Studio_Project\UtsMobile\app\app.iml" filepath="D:\Project\Android_Studio_Project\UtsMobile\app\app.iml" />
     </modules>
   </component>
 </project>
